@@ -2,7 +2,6 @@
 #include <windows.h>
 #include <string>
 #include <fstream>
-#include <direct.h>
 
 using namespace std;
 
@@ -564,6 +563,7 @@ int main()
 				DrawBoard();
 			}
 		}
+		
 		if (map[y][x] == '3' || GetAsyncKeyState(VK_RETURN) && CheaterMode && level == 9) { //If game finished
 			system("color 1a");
 			Sleep(50);
